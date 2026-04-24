@@ -8,5 +8,23 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "author": "Rajesh Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajesh-kumar/ngx-session-storage.git"
+  },
+  "keywords": [
+    "angular",
+    "sessionstorage",
+    "storage",
+    "ssr",
+    "type-safe",
+    "rxjs",
+    "ngx"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false
 }

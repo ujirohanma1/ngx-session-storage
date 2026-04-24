@@ -22,8 +22,16 @@ A lightweight, production-ready, and **type-safe** wrapper for `SessionStorage` 
 
 ```bash
 npm install ngx-session-storage
+```
 
-⚙️ ConfigurationTo use a custom prefix (e.g., app_v1_user), configure the provider in your app.config.ts (for Standalone apps) or AppModule.Standalone SetupTypeScriptimport { ApplicationConfig } from '@angular/core';
+## ⚙️ Configuration
+
+To use a custom prefix (e.g., `app_v1_user`), configure the provider in your `app.config.ts` (for Standalone apps) or `AppModule`.
+
+### Standalone Setup
+
+```typescript
+import { ApplicationConfig } from '@angular/core';
 import { SESSION_STORAGE_CONFIG } from 'ngx-session-storage';
 
 export const appConfig: ApplicationConfig = {
@@ -34,7 +42,16 @@ export const appConfig: ApplicationConfig = {
     }
   ]
 };
-🚀 UsageBasic CRUD OperationsInject the SessionStorageService into your components or services.TypeScriptimport { SessionStorageService } from 'ngx-session-storage';
+```
+
+## 🚀 Usage
+
+### Basic CRUD Operations
+
+Inject the `SessionStorageService` into your components or services.
+
+```typescript
+import { SessionStorageService } from 'ngx-session-storage';
 
 @Component({ ... })
 export class AppComponent {
@@ -53,7 +70,8 @@ export class AppComponent {
     this.storage.clear();
   }
 }
-Advanced FunctionsTypeScript// Check if a value exists
+```typescript
+// Check if a value exists
 if (this.storage.exists('auth_token')) {
   console.log('User is authenticated');
 }
@@ -66,6 +84,7 @@ this.storage.observe('user').subscribe(updatedUser => {
   console.log('User data changed in storage:', updatedUser);
 });
 ```
+
 ## 🛠 API Reference
 
 | Method | Parameters | Return Type | Description |
@@ -77,3 +96,17 @@ this.storage.observe('user').subscribe(updatedUser => {
 | **clear** | `none` | `void` | Clears all SessionStorage data. |
 | **observe<T>** | `(key: string)` | `Observable<T>` | Returns an observable for the specific key. |
 | **length** | `none` | `number` | Returns total item count. |
+
+## 🔗 Links
+
+*   **Repository**: [https://github.com/rajesh-kumar/ngx-session-storage](https://github.com/rajesh-kumar/ngx-session-storage)
+*   **Bugs**: [https://github.com/rajesh-kumar/ngx-session-storage/issues](https://github.com/rajesh-kumar/ngx-session-storage/issues)
+*   **NPM**: [https://www.npmjs.com/package/ngx-session-storage](https://www.npmjs.com/package/ngx-session-storage)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
