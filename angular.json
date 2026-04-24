@@ -6,5 +6,31 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-session-storage": {
+      "projectType": "library",
+      "root": "projects/ngx-session-storage",
+      "sourceRoot": "projects/ngx-session-storage/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-session-storage/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-session-storage/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ngx-session-storage/tsconfig.spec.json"
+          }
+        }
+      }
+    }
   }
 }
