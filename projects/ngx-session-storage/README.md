@@ -99,8 +99,8 @@ this.storage.observe('user').subscribe(updatedUser => {
 
 ## 🔗 Links
 
-*   **Repository**: [https://github.com/rajesh-kumar/ngx-session-storage](https://github.com/rajesh-kumar/ngx-session-storage)
-*   **Bugs**: [https://github.com/rajesh-kumar/ngx-session-storage/issues](https://github.com/rajesh-kumar/ngx-session-storage/issues)
+*   **Repository**: [https://github.com/ujirohanma1/ngx-session-storage](https://github.com/ujirohanma1/ngx-session-storage)
+*   **Bugs**: [https://github.com/ujirohanma1/ngx-session-storage/issues](https://github.com/ujirohanma1/ngx-session-storage/issues)
 *   **NPM**: [https://www.npmjs.com/package/ngx-session-storage](https://www.npmjs.com/package/ngx-session-storage)
 
 ## 🤝 Contributing
